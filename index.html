@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>돈의 경맥 · 목차</title>
+<meta name="description" content="자금순환표로 읽는 거시경제 — 경제순환·IS-LM·AD-AS를 회계 세 장부 비유로 자금순환표와 잇고, 상세자금순환표와 2025~2026년 한국 통계로 돈의 쏠림과 연결을 출처와 함께 읽는 인터랙티브 해설 시리즈. 박사·조수(하루)·초파리 연구원·주판봇이 진행합니다.">
+<meta name="author" content="안상선">
+<meta property="og:title" content="돈의 경맥 — 자금순환으로 읽는 거시경제">
+<meta property="og:description" content="돈은 어디로 흐르고, 어디에 고이고, 어디서 막히는가 — 한국은행 자금순환표로 읽는 3편 해설">
+<meta property="og:image" content="og_index.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#13141f;--panel:#1c1e2d;--panel2:#25283a;--rule:#363a52;--text:#eceaf3;--muted:#9d9bb8;
+  --gfp:#5ee39c;--stain:#d672d6;--amber:#f1b646;--eye:#f0604d;--info:#82b8ff;--teal:#57d0dc;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 "IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--info)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+nav.top{position:sticky;top:0;z-index:50;height:54px;display:flex;align-items:center;gap:14px;padding:0 16px;background:rgba(19,20,31,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.top::-webkit-scrollbar{display:none}
+nav.top .logo{font-weight:700;color:var(--text);text-decoration:none}
+nav.top a{color:var(--muted);text-decoration:none;font-size:14px}
+.cover{position:relative;width:100%;margin:0;background:radial-gradient(ellipse at 50% 40%,#2a2150 0%,#1b1533 45%,#13141f 100%);aspect-ratio:16/9;max-height:72vh;overflow:hidden;border-bottom:1px solid var(--rule)}
+.cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.cover .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;color:var(--muted);text-align:center;padding:16px}
+.cover .ph b{font-size:clamp(28px,6vw,64px);color:var(--text);letter-spacing:.04em}
+.cover.has-img .ph{display:none}
+.cover-chip{position:absolute;left:16px;bottom:14px;padding:4px 10px;border-radius:999px;background:rgba(19,20,31,.72);font-size:13px}
+@media (max-width:600px){.cover{max-height:none}.cover-chip{font-size:11px;padding:2px 8px;top:8px;bottom:auto;left:8px}}
+header.intro{padding:40px 0 24px}
+.eyebrow{font-size:13px;color:var(--muted)}
+h1{font-size:clamp(30px,5vw,50px);line-height:1.2;margin:.25em 0 .35em}
+h2{font-size:clamp(22px,3vw,30px);margin:0 0 .5em}
+.lead{font-size:18px;max-width:720px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}
+.kpi{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:12px 14px}
+.kpi b{display:block;font-size:24px;line-height:1.2;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--muted)}
+.kpi.g b{color:var(--gfp)}.kpi.m b{color:var(--stain)}.kpi.a b{color:var(--amber)}.kpi.t b{color:var(--teal)}
+section{padding:32px 0;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:14px}
+.card{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:18px;background:var(--panel);border:1px solid var(--rule);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--text)}
+.card:hover,.card:focus-visible{border-color:var(--gfp)}
+.card .thumb{position:relative;aspect-ratio:3/2;background:linear-gradient(150deg,var(--c1),#13141f);display:flex;align-items:center;justify-content:center}
+.card .thumb span{font-size:56px;font-weight:700;color:rgba(236,234,243,.85)}
+.card .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card .body{padding:16px 18px 18px 0}
+.card .no{font-size:13px;color:var(--gfp);font-weight:700}
+.card h3{margin:.2em 0 .4em;font-size:21px;line-height:1.35}
+.card p{margin:.3em 0;color:var(--muted)}
+.card .q{color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tags span{font-size:12px;border:1px solid var(--rule);border-radius:999px;padding:2px 10px;color:var(--muted)}
+.go{display:inline-block;margin-top:12px;background:var(--gfp);color:#10221a;font-weight:700;border-radius:999px;padding:6px 16px;font-size:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.box{background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:14px 16px}
+.box h3{margin:.1em 0 .4em;font-size:16px;color:var(--amber)}
+.box ul{margin:.2em 0;padding-left:1.2em}
+.chip{display:inline-block;font-size:12px;border-radius:999px;padding:1px 9px;border:1px solid}
+.chip.prim{color:var(--gfp);border-color:var(--gfp)}.chip.news{color:var(--amber);border-color:var(--amber)}.chip.date{color:var(--info);border-color:var(--info)}
+.stamp{display:inline-block;font-size:12px;border-radius:6px;padding:1px 8px;background:rgba(241,182,70,.15);color:var(--amber);border:1px solid rgba(241,182,70,.5)}
+.cast{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.cast span{font-size:13px;background:var(--panel2);border-radius:999px;padding:3px 12px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:500}
+footer{padding:32px 0 80px;color:var(--muted);font-size:14px;border-top:1px solid var(--rule)}
+@media (max-width:760px){.card{grid-template-columns:1fr}.card .body{padding:0 16px 18px}.grid2{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="바로가기">
+  <a class="logo" href="#top">🔬 경맥 연구실</a>
+  <a href="#list">편 목록</a><a href="#inside">들어 있는 것</a><a href="#rules">출처 원칙</a><a href="#source">주요 자료</a>
+</nav>
+
+<!-- lab-cover -->
+<header class="cover" id="top" data-img="cover_index">
+  <div class="ph" aria-hidden="true"><b>돈의 경맥</b><span>자금순환으로 읽는 거시경제</span></div>
+  <img src="cover_index.webp" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()" width="1600" height="900" alt="밤의 연구실 벽에 걸린 돈의 경맥 지도(관·실 그물·환승역)를 박사가 가리키고, 조수·초파리 연구원·주판봇이 함께 올려다보는 시리즈 표지" fetchpriority="high" decoding="async">
+  <span class="cover-chip">경맥 연구실 · 자금순환으로 읽는 거시경제</span>
+</header>
+<!-- /lab-cover -->
+
+<div class="wrap">
+<header class="intro">
+  <div class="eyebrow">경제학 × 회계학 해설 시리즈 · 글 안상선 · 자료 한국은행 자금순환표·상세자금순환표</div>
+  <h1>돈의 경맥 —<br>자금순환으로 읽는 거시경제</h1>
+  <p class="lead">돈은 어디로 흐르고, 어디에 고이고, 어디서 막히는가? 경제순환모형·IS-LM·AD-AS를 회계의 세 장부(손익계산서·재무상태표·현금흐름표) 비유로 자금순환표와 잇고, 한국은행 통계로 2025~2026년 한국 경제의 돈의 흐름을 출처와 함께 읽습니다. 슬라이더와 시뮬레이션을 직접 움직여 보는 인터랙티브 해설입니다.</p>
+  <div class="kpis">
+    <div class="kpi g"><b>3</b><span>편 (01~03)</span></div>
+    <div class="kpi m"><b>15</b><span>칸 (편마다 5칸 사다리)</span></div>
+    <div class="kpi a"><b>3</b><span>대결 (초파리 연구원 vs 주판봇)</span></div>
+    <div class="kpi t"><b>2026-11</b><span>자료 기준 시점</span></div>
+  </div>
+</header>
+
+<section id="list">
+  <h2>편 목록</h2>
+  <div class="cards">
+  <a class="card" href="01_fof_money_meridian.html">
+    <div class="thumb" style="--c1:#6b4a1e"><span>01</span><img src="thumb_fof01.webp" onerror="this.remove()" width="600" height="400" alt="" loading="lazy" decoding="async"></div>
+    <div class="body">
+      <div class="no">제 01 편</div>
+      <h3>돈의 경맥 — 경제순환에서 자금순환표까지</h3>
+      <p class="q">돈은 어디로 흐르고, 어디에 고이는가?</p>
+      <p>경제순환모형 → IS-LM → AD-AS → 부문수지 항등식 → 잔액표의 평가 변동까지 사다리로 오른 뒤, 반도체 이익 집중·주식과 실물의 괴리·지역 집값 진단 카드와 환류 시나리오를 돌려 봅니다.</p>
+      <div class="tags"><span>순자금운용</span><span>IS-LM</span><span>AD-AS</span><span>부문수지 항등식</span><span>평가 변동</span><span>환류 시나리오</span></div>
+      <span class="go">해설 열기 →</span>
+    </div>
+  </a>
+  <a class="card" href="02_fof_who_to_whom.html">
+    <div class="thumb" style="--c1:#1e4a6b"><span>02</span><img src="thumb_fof02.webp" onerror="this.remove()" width="600" height="400" alt="" loading="lazy" decoding="async"></div>
+    <div class="body">
+      <div class="no">제 02 편</div>
+      <h3>누가 누구에게 — 상세자금순환표로 그리는 돈의 지도</h3>
+      <p class="q">가계가 은행에 맡긴 돈은 결국 누구에게 갔을까?</p>
+      <p>보유자 × 발행자 행렬과 중개 투시 실험으로 원리를 익히고, 2024년 말 상호연계비율과 2026년 분기 자금순환(예금 → 주식·펀드)으로 실제 돈의 지도를 근사합니다.</p>
+      <div class="tags"><span>상세자금순환표</span><span>거래상대방 행렬</span><span>금융중개</span><span>투시 계산</span><span>상호연계비율</span></div>
+      <span class="go">해설 열기 →</span>
+    </div>
+  </a>
+  <a class="card" href="03_fof_between_stations.html">
+    <div class="thumb" style="--c1:#4a1e6b"><span>03</span><img src="thumb_fof03.webp" onerror="this.remove()" width="600" height="400" alt="" loading="lazy" decoding="async"></div>
+    <div class="body">
+      <div class="no">제 03 편</div>
+      <h3>금융기관끼리 — 정거장 사이의 연결</h3>
+      <p class="q">금융기관끼리 촘촘하게 엮일수록 더 안전할까, 더 위험할까?</p>
+      <p>환승 모형으로 금융권 안에서 도는 돈을 보고, 고리형·완전 연결·두 무리 금융망의 전염 실험을 돌린 뒤, 2024년 말 금융기관 간 연계와 2026년 금융안정 지표를 점검합니다.</p>
+      <div class="tags"><span>금융기관 간 연계</span><span>(I − F)⁻¹</span><span>전염</span><span>상전이</span><span>금융취약성지수</span><span>레버리지</span></div>
+      <span class="go">해설 열기 →</span>
+    </div>
+  </a>
+  </div>
+</section>
+
+<section id="inside">
+  <h2>들어 있는 것</h2>
+  <div class="grid2">
+    <div class="box"><h3>해설 페이지</h3><ul>
+      <li>편마다 5칸 사다리: 일상 비유 → 모형 → 실험 → 실제 통계 → 지금의 점검</li>
+      <li>대결: 초파리 연구원과 주판봇이 결과를 걸고, 같은 모형으로 판정</li>
+      <li>칸마다 확인 퀴즈(힌트·해설), 노란 점선 용어 말풍선</li></ul></div>
+    <div class="box"><h3>가져갈 수 있는 것</h3><ul>
+      <li>지식 색인: 개념·지표·주장을 검색하고 연결 그래프로 보기</li>
+      <li>꾸러미: JSON-LD, Turtle, CSV, BibTeX, RIS 내려받기</li>
+      <li>편 사이 개념 ID 공유(예: 순자금운용, 상세자금순환표, 상호연계비율)</li></ul></div>
+  </div>
+  <div class="box" style="margin-top:12px"><h3>진행하는 캐릭터</h3>
+    <div class="cast"><span>박사 — 해설과 판정</span><span>조수(하루) — 통계와 숫자 발표</span><span>초파리 연구원 — 의심하는 쪽</span><span>주판봇 — 확신하는 쪽</span></div></div>
+</section>
+
+<section id="rules">
+  <h2>출처 원칙</h2>
+  <ul>
+    <li>숫자마다 근거 칩을 붙였습니다: <span class="chip prim">1차 자료</span> 기관 원문에서 확인, <span class="chip news">보도</span> 기관 발표를 전한 언론 보도로 확인, <span class="chip date">기준일</span> 통계 시점.</li>
+    <li>장난감 모형과 가정값은 <span class="stamp">설명용 모형</span>, 실제 통계는 <span class="stamp">실제 통계</span> 도장으로 나눴습니다. 필자 계산·해석·추정은 본문에 따로 표시했습니다.</li>
+    <li>모든 편은 원문 대조 검증을 거쳤고, 페르소나 다관점 검수(교수·실무자·분석가·학생·투자자·회계 강사)로 개념 오류와 대결 설계를 고쳤습니다.</li>
+    <li>잠정치는 개정될 수 있습니다. 한국은행 ECOS 원자료로 수치를 1차 자료화하고 자동 갱신하는 구조를 준비하고 있습니다.</li>
+  </ul>
+</section>
+
+<section id="source">
+  <h2>주요 자료</h2>
+  <div class="tw"><table>
+    <thead><tr><th>자료</th><th>쓰인 곳</th></tr></thead>
+    <tbody>
+      <tr><td>한국은행, 「상세자금순환표 신규 공표」 보도참고자료 (2026-01-08) <a href="https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10095593&amp;menuNo=201264">원문</a></td><td>02·03</td></tr>
+      <tr><td>한국은행 분기 자금순환(잠정) 2026년 1·2분기 — 보도로 확인</td><td>01·02</td></tr>
+      <tr><td>한국은행, 「최근 금융부문의 상호연계성 추이 및 리스크 점검」 (금융안정보고서 2021-12) <a href="https://www.bok.or.kr/portal/bbs/B0000257/view.do?nttId=10068102&amp;menuNo=200327">원문</a></td><td>03</td></tr>
+      <tr><td>한국은행, 2026년 상반기 금융안정보고서 (2026-06-24) — 보도로 확인</td><td>03</td></tr>
+      <tr><td>한동훈 (2012), 주동헌 (2019) — 자금순환표를 이용한 실물경기·금융가속기 연구</td><td>01</td></tr>
+      <tr><td>Godley &amp; Lavoie (2007) <i>Monetary Economics</i>; Allen &amp; Gale (2000); Eisenberg &amp; Noe (2001); Acemoglu, Ozdaglar &amp; Tahbaz-Salehi (2015)</td><td>01~03</td></tr>
+    </tbody></table></div>
+  <p class="eyebrow">편마다 바닥글에 숫자별 출처 표와 확인일을 실었습니다. 이 시리즈는 교육용이며 투자 자문이 아닙니다.</p>
+</section>
+</div>
+
+<footer>
+<div class="wrap">
+  <p>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a> · 이 저장소: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+  <p>캐릭터 그림: 박사·조수(하루)·초파리 연구원·주판봇 — <a href="https://adminmrobo.github.io/fruitfly-lab-expressions/">fruitfly-lab-expressions</a>, © 안상선</p>
+</div>
+</footer>
+</body>
+</html>
