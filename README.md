@@ -7,9 +7,11 @@
 - 공개 주소: https://adminmrobo.github.io/fof-money-meridian-/ (GitHub Pages를 켠 뒤)
 - 목차: [index.html](index.html)
 
-![표지](cover_index.webp)
+| 01 | 02 | 03 |
+|---|---|---|
+| ![01편 표지](thumb_fof01.webp) | ![02편 표지](thumb_fof02.webp) | ![03편 표지](thumb_fof03.webp) |
 
-> 표지 그림은 아직 만들기 전입니다. [docs/COVER_index_fof_money_meridian.md](docs/COVER_index_fof_money_meridian.md)의 프롬프트로 만든 뒤 `cover_index.webp`로 저장소 루트에 올리면 위 그림과 목차 첫 화면에 바로 보입니다.
+> 시리즈(목차) 표지는 아직 만들기 전입니다. [docs/COVER_index_fof_money_meridian.md](docs/COVER_index_fof_money_meridian.md)의 프롬프트로 만든 뒤 `cover_index.webp`로 저장소 루트에 올리면 목차 첫 화면에 바로 보입니다.
 
 ## 편 목록
 
@@ -63,7 +65,8 @@
 | `index.html` | 목차 (표지 + 편 카드) |
 | `01_fof_money_meridian.html` · `02_fof_who_to_whom.html` · `03_fof_between_stations.html` | 해설 페이지 (캐릭터 그림·지식 색인·꾸러미 내장, 외부 라이브러리 없음) |
 | `cover_index.webp` · `og_index.jpg` | 목차 표지·공유 미리보기 (만들 예정) |
-| `cover_fof0N.webp` · `thumb_fof0N.webp` · `og_fof0N.jpg` | 편별 표지·목차 카드·공유 미리보기 (만들 예정) |
+| `cover_fof0N.webp` · `thumb_fof0N.webp` · `og_fof0N.jpg` | 편별 표지·목차 카드·공유 미리보기 |
+| `cut_fof0N_*.webp` · `sc_fof0N_outro.webp` | 본문 장면 컷·아웃트로 그림 |
 | `docs/COVER_*.md` | 표지 지시문 (Genspark에 붙여 넣는 프롬프트, 받은 뒤 처리) |
 | `docs/IMG_*.md` | 편별 이미지 제작 명세서 (본문 장면 컷, 매니페스트) |
 
@@ -85,7 +88,7 @@
 | 02편 | 일곱 색 구슬을 잇는 실 그물 | [COVER_fof02_who_to_whom.md](docs/COVER_fof02_who_to_whom.md) |
 | 03편 | 선로로 이어진 환승역 다섯 곳, 기울어진 역 하나 | [COVER_fof03_between_stations.md](docs/COVER_fof03_between_stations.md) |
 
-본문 장면 컷(`sc_*`, `cut_*`)은 페이지에 자리만 숨겨 두었습니다. 넣는 법은 각 `IMG_*.md`의 "넘겨받은 뒤 처리"를 보세요.
+본문 장면 컷과 아웃트로 그림은 각 편에 들어가 있습니다. 히어로 무대 컷(`sc_fof0N_hero`)은 선택 항목이라 자리만 숨겨 두었습니다.
 
 ## 캐릭터
 

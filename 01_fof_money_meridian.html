@@ -177,6 +177,9 @@ pre.cite{white-space:pre-wrap;background:var(--panel2);border-radius:10px;paddin
 footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
 .stampnote{display:inline-block;font-size:11.5px;font-weight:700;color:var(--amber);border:1px solid rgba(241,182,70,.7);background:rgba(241,182,70,.14);border-radius:999px;padding:1px 9px}
 .refs li,pre.cite,#todoList li,.byline,.lim{overflow-wrap:anywhere}
+
+figure.cutslot{margin:18px 0;border-radius:14px;overflow:hidden;border:1px solid var(--rule);background:var(--panel)}
+figure.cutslot img{display:block;width:100%;height:auto}
 </style>
 </head><body>
 <nav class="top" aria-label="섹션 바로가기">
@@ -360,7 +363,7 @@ footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);f
     <div><div class="tag fly">장부로 보면</div><p>회사의 당기순이익에 감가상각을 더하고 운전자본 증가분을 빼면 영업현금흐름이 됩니다. 이익(발생 기준)과 현금(실제 이동)은 다릅니다.</p></div>
     <div><div class="tag nn">모형에서는</div><p>부문마다 저축에서 투자를 뺀 값이 그 부문이 남긴 돈(순자금운용)입니다. 모든 국내 부문의 합은 국외 부문 순자금운용의 반대이고, 자본수지와 통계상 불일치를 무시하면 경상수지와 같습니다. 이 항등식을 부문 모형으로 쌓은 것이 Godley·Lavoie(2007)의 저량-유량 일관 접근입니다.</p></div>
   </div>
-  <div class="cutslot" data-img="cut_fof01_lv4" role="img" aria-label="박사와 조수가 펼쳐진 장부 세 권에서 벽의 관으로 이어지는 빛줄기를 살펴보는 장면" hidden></div>
+  <figure class="cutslot" data-img="cut_fof01_lv4"><img src="cut_fof01_lv4.webp" alt="박사와 조수가 펼쳐진 장부 세 권에서 벽의 관으로 이어지는 빛줄기를 살펴보는 장면" width="1360" height="768" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></figure>
   <section class="panel" aria-label="부문수지 항등식 실제 통계">
     <div class="ctrl"><div class="group"><label class="glabel" for="qSel">분기</label><select id="qSel" class="bt"></select></div></div>
     <div class="cwrap"><canvas id="cBal" aria-label="선택한 분기의 가계, 비금융법인, 일반정부, 금융법인 등, 국외 부문 순자금운용 막대"></canvas></div>
@@ -387,7 +390,7 @@ footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);f
     <div><div class="tag fly">장부로 보면</div><p>회사가 보유한 주식값이 오르면 재무상태표의 자산은 커지지만 그 돈이 들어온 것은 아닙니다. 이 미실현 평가이익은 K-IFRS에서 원칙적으로 당기손익에, 회사가 처음에 선택해 지정한 지분상품이면 기타포괄손익에 적습니다. 어느 쪽이든 현금 유입으로는 잡히지 않습니다(간접법 현금흐름표에서는 조정 항목으로 빠집니다).</p></div>
     <div><div class="tag nn">모형에서는</div><p>자금순환표의 잔액표 증가분 = 그 기간 거래(자금운용) + 평가 변동 등. 잔액 증가에서 거래를 빼면 주가·환율로 불어난 몫이 남습니다. 이 몫은 금융자산을 가진 가계에만 돌아갑니다.</p></div>
   </div>
-  <div class="cutslot" data-img="cut_fof01_lv5" role="img" aria-label="가는 관으로 조금 들어온 구슬보다 훨씬 크게 부풀어 오른 금빛 수조를 초파리 연구원이 돋보기로 살피는 장면" hidden></div>
+  <figure class="cutslot" data-img="cut_fof01_lv5"><img src="cut_fof01_lv5.webp" alt="가는 관으로 조금 들어온 구슬보다 훨씬 크게 부풀어 오른 금빛 수조를 초파리 연구원이 돋보기로 살피는 장면" width="1360" height="768" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></figure>
   <section class="panel" aria-label="가계 금융자산 증가 분해">
     <div class="cwrap"><canvas id="cRes" aria-label="가계 금융자산 증가를 거래(초록)와 평가 변동 등(노랑)으로 나눈 막대, 기간별 평가÷거래 배율"></canvas></div>
     <section class="kpis">
@@ -549,7 +552,7 @@ footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);f
 <section class="level" id="outro">
 <div class="wrap">
   <h2>아웃트로</h2>
-  <div class="cutslot" data-img="sc_fof01_outro" role="img" aria-label="대결이 끝난 뒤 네 캐릭터가 배관망 앞에 모인 장면" hidden></div>
+  <figure class="cutslot" data-img="sc_fof01_outro"><img src="sc_fof01_outro.webp" alt="대결이 끝난 뒤 네 캐릭터가 배관망 앞에 모인 장면" width="1152" height="768" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></figure>
   <div class="dialog">
     <div class="say" data-who="doc"><img class="who" data-who="doc" data-mood="magic" data-img="doc_magic" alt="" aria-hidden="true"><div><b class="name">박사</b><p>정리하면 세 줄입니다. 손익(GDP)은 자랐다. 현금흐름(자금순환)은 기업 금고와 해외로 갔다. 재무상태표(부)는 평가로 불었고, 2025년 3월 기준으로도 이미 위쪽에 몰려 있었다.</p></div></div>
     <div class="say" data-who="robo"><img class="who" data-who="robo" data-mood="happy" data-img="robo_happy" alt="" aria-hidden="true"><div><b class="name">주판봇</b><p>4%면 넘는다니까. 이익 덩치가 크면 조금만 내려와도 크지.</p></div></div>

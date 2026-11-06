@@ -177,6 +177,9 @@ pre.cite{white-space:pre-wrap;background:var(--panel2);border-radius:10px;paddin
 footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
 .stampnote{display:inline-block;font-size:11.5px;font-weight:700;color:var(--amber);border:1px solid rgba(241,182,70,.7);background:rgba(241,182,70,.14);border-radius:999px;padding:1px 9px}
 .refs li,pre.cite,#todoList li,.byline,.lim{overflow-wrap:anywhere}
+
+figure.cutslot{margin:18px 0;border-radius:14px;overflow:hidden;border:1px solid var(--rule);background:var(--panel)}
+figure.cutslot img{display:block;width:100%;height:auto}
 </style>
 </head><body>
 <nav class="top" aria-label="섹션 바로가기">
@@ -333,6 +336,7 @@ footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);f
   <details class="math"><summary>수식으로 보기</summary><p>가계 운용 벡터 <b>h</b> = (은행 50, 보험 30, 펀드 20). 금융기관 자산 구성 행렬 <b>M</b>의 행은 은행 (기업 a, 가계 0.8−a, 정부 0.2, 해외 0), 보험 (0.3, 0, 0.5, 0.2), 펀드 (0.8−f, 0, 0.2, f). 최종 배분 = <b>h</b>·<b>M</b>. 금융기관끼리 돈이 다시 오가면(은행 → 기타금융기관) 한 번 곱하는 것으로 끝나지 않고 (I − 금융기관 간 행렬)<sup>−1</sup>을 곱해야 합니다.</p></details>
   <div class="bridge gen"><h4>뉴스·정책으로 읽으면</h4><p>"가계 예금이 줄고 주식·펀드로 이동했다"는 기사는 ②칸의 가계 행이 바뀐 이야기입니다. 그 돈이 국내 기업 투자로 갔는지 해외 주식으로 갔는지는 펀드와 운용사의 자산 구성까지 투시해야 알 수 있습니다.</p><p class="lim">한계: 모형은 가정을 따른다. 실제 투시는 금융기관 간 거래와 시가 평가까지 함께 다뤄야 한다.</p></div>
   <div class="say" data-who="robo"><img class="who" data-who="robo" data-mood="calc" data-img="robo_calc" alt="" aria-hidden="true"><div><b class="name">주판봇</b><p>잠깐, 그럼 장부에 은행이라고 적힌 돈 중에 기업이 쓴 게 따로 있다는 거야?</p></div></div>
+  <figure class="cutslot" data-img="cut_fof02_lv5"><img src="cut_fof02_lv5.webp" alt="초파리 연구원이 물류센터 같은 은행 상자를 열어 안쪽 분류 선반을 들여다보는 장면" width="1360" height="768" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></figure>
   <div class="quiz" data-quiz="lv3"></div>
 </div>
 </section>
@@ -399,7 +403,6 @@ footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);f
     <li><b>이 칸의 한계:</b> 분기 자료는 상대 부문을 직접 적지 않습니다. 이 지도의 화살표 방향은 상품으로 추정한 것입니다.</li>
   </ol></div>
   <div class="bridge field"><h4>현장에 옮기면</h4><p>보도에 따르면 상세자금순환표는 매년 1월 분기 자금순환과 함께 2년 전 연도분이 나옵니다 <a href="#s-w2w">[1]</a>. 이 일정대로라면 2025년 말 지도는 2027년 1월, 2026년 말 지도는 2028년 1월에 나옵니다. 그 전까지 2026년의 '누가 누구에게'는 이 칸처럼 근사할 수밖에 없고, 직접 보유 주식은 그 뒤에도 상세표 밖입니다.</p></div>
-  <div class="cutslot" data-img="cut_fof02_lv5" role="img" aria-label="초파리 연구원이 물류센터 같은 은행 상자를 열어 안쪽 분류 선반을 들여다보는 장면" hidden></div>
   <div class="quiz" data-quiz="lv5"></div>
 </div>
 </section>
@@ -451,7 +454,7 @@ footer{padding:40px 0 90px;border-top:1px solid var(--rule);color:var(--muted);f
 <section class="level" id="outro">
 <div class="wrap">
   <h2>아웃트로</h2>
-  <div class="cutslot" data-img="sc_fof02_outro" role="img" aria-label="대결이 끝난 뒤 네 캐릭터가 실 그물 앞에 모인 장면" hidden></div>
+  <figure class="cutslot" data-img="sc_fof02_outro"><img src="sc_fof02_outro.webp" alt="대결이 끝난 뒤 네 캐릭터가 실 그물 앞에 모인 장면" width="1152" height="768" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></figure>
   <div class="dialog">
     <div class="say" data-who="doc"><img class="who" data-who="doc" data-mood="magic" data-img="doc_magic" alt="" aria-hidden="true"><div><b class="name">박사</b><p>세 줄로 정리합니다. 합계는 상대를 지운다. 행렬은 직접 상대를 보여 준다. 투시해야 최종 사용자가 보인다.</p></div></div>
     <div class="say" data-who="fly"><img class="who flip" data-who="fly" data-mood="coffee" data-img="fly_coffee" alt="" aria-hidden="true"><div><b class="name">초파리 연구원</b><p>펀드로 간 10보다 은행 통로 40의 방향이 더 셌네. 인정. 다음엔 그 정거장끼리 주고받는 것도 볼 거야.</p></div></div>
