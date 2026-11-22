@@ -79,19 +79,22 @@
 | `docs/COVER_*.md` | 표지 지시문 (Genspark에 붙여 넣는 프롬프트, 받은 뒤 처리) |
 | `docs/IMG_*.md` | 편별 이미지 제작 명세서 (본문 장면 컷, 매니페스트) |
 
-## 그림 넣는 법 (낮의 연구실 v2)
+## 그림 (낮의 연구실 v2 · 2026-11-23 반영)
 
-비전공자판부터 페이지는 `_v2_` 이름의 그림을 부릅니다. 그림 파일을 저장소 루트에 같은 이름으로 올리면 HTML은 고칠 필요가 없습니다. 지시문은 [docs/COVER_v2_day_lab.md](docs/COVER_v2_day_lab.md)에 있습니다.
-
-| 파일 | 어디에 보이나 | 그림이 없을 때 |
+| 01 | 02 | 03 |
 |---|---|---|
-| `cover_v2_index.webp` | 목차 첫 화면 | 제목과 캐릭터 여섯 명의 흰 배경 표지 |
-| `thumb_v2_fof01~03.webp` | 목차 편 카드 | 편 번호가 적힌 밝은 색 카드 |
-| `cover_v2_fof01~03.webp` | 각 편 맨 위 표지 | 캔버스로 그린 대체 표지(캐릭터 여섯 + 편별 모티프, 흰 배경) |
-| `cut_v2_*`, `sc_v2_*_outro.webp` | 본문 장면·아웃트로 | 자리 숨김 |
-| `og_*.jpg` | 링크 공유 미리보기 | 지금은 예전(밤의 연구실) 그림. v2를 받으면 교체 |
+| ![01편 표지](thumb_v2_fof01.webp) | ![02편 표지](thumb_v2_fof02.webp) | ![03편 표지](thumb_v2_fof03.webp) |
 
-예전 밤의 연구실 그림(`cover_fof0N`, `cut_fof0N_*`, `sc_fof0N_outro`, `thumb_fof0N`)과 지시문(`docs/COVER_fof0N_*.md`, `docs/IMG_*.md`)은 기록으로 남겨 두었습니다.
+| 파일 | 어디에 보이나 | 상태 |
+|---|---|---|
+| `cover_v2_index.webp` · `cover_v2_fof01~03.webp` | 목차·각 편 맨 위 표지 (1920×1080) | **반영** |
+| `thumb_v2_fof01~03.webp` | 목차 편 카드 (표지에서 3:2로 잘라 600×400) | **반영** |
+| `cut_v2_fof01_lv4·lv5`, `cut_v2_fof02_lv5`, `cut_v2_fof03_lv5` | 본문 장면 (1360×768) | **반영** (02편 장면은 그림 내용에 맞춰 ⑤ 단계로 옮김) |
+| `sc_v2_fof01~03_outro.webp` | 각 편 아웃트로 (1152×768) | **반영** |
+| `og_v2_index.jpg` · `og_v2_fof01~03.jpg` | 링크 공유 미리보기 (1200×630, 표지에서 자름) | **반영** |
+
+받은 PNG 원본은 `assets/v2_src/`에 보관했습니다. 요청문은 [docs/COVER_v2_day_lab.md](docs/COVER_v2_day_lab.md)와 [docs/genspark_v2/](docs/genspark_v2/)에 있습니다.
+예전 밤의 연구실 그림(`cover_fof0N`, `cut_fof0N_*`, `sc_fof0N_outro`, `thumb_fof0N`, `og_fof0N`)과 지시문은 기록으로 남겨 두었고, 페이지는 더 이상 부르지 않습니다.
 
 ## 캐릭터
 
