@@ -2,16 +2,19 @@
 
 경제학 × 회계학 해설 시리즈 · 글 **안상선** · 자료 한국은행 자금순환표·상세자금순환표
 
-돈은 어디로 흐르고, 어디에 고이고, 어디서 막히는가? 경제순환모형·IS-LM·AD-AS를 회계의 세 장부(손익계산서·재무상태표·현금흐름표) 비유로 자금순환표와 잇고, 한국은행 통계로 2025~2026년 한국 경제의 돈의 흐름을 출처와 함께 읽습니다. 박사 · 조수(하루) · 초파리 연구원 · 주판봇이 진행하는 단일 HTML 인터랙티브 해설입니다.
+돈은 어디로 흐르고, 어디에 고이고, 어디서 막히는가? 오늘 뉴스 두 편(연구실 리포트)으로 문을 열고, 경제순환모형·IS-LM·AD-AS를 회계의 재무제표 세 가지(손익계산서·재무상태표·현금흐름표)에 빗대 자금순환표와 잇습니다. 2026-11-23 **처음 오신 분을 위한 판(비전공자판)**으로 다시 썼습니다: 흰 배경(낮의 연구실), 조수 하루가 인턴 시아·모아에게 묻고, 방청석 X1~X3가 긴장한 인턴을 걱정하며, 초파리 연구원·주판봇이 돕고 박사가 정리합니다.
 
-- 공개 주소: https://adminmrobo.github.io/fof-money-meridian-/ (GitHub Pages를 켠 뒤)
+- 공개 주소: https://adminmrobo.github.io/fof-money-meridian-/
 - 목차: [index.html](index.html)
 
-| 01 | 02 | 03 |
-|---|---|---|
-| ![01편 표지](thumb_fof01.webp) | ![02편 표지](thumb_fof02.webp) | ![03편 표지](thumb_fof03.webp) |
+## 연구실 리포트 (동향) — 서론에서 함께 다룸
 
-> 시리즈(목차) 표지는 아직 만들기 전입니다. [docs/COVER_index_fof_money_meridian.md](docs/COVER_index_fof_money_meridian.md)의 프롬프트로 만든 뒤 `cover_index.webp`로 저장소 루트에 올리면 목차 첫 화면에 바로 보입니다.
+| 리포트 | 파일 | 기준 시점 |
+|---|---|---|
+| R01 40대 마이너스통장 연체액, 10개월 새 82% 늘었다 | [reports/R01_mtong-arrears-40s.html](reports/R01_mtong-arrears-40s.html) | 2026-11-22 (숫자는 10월 말) |
+| R02 AI 업계의 다음 병목은 현금일까 — 머스크의 운전자본 경고 | [reports/R02_musk-ai-cash-gap.html](reports/R02_musk-ai-cash-gap.html) | 2026-11-23 (발언은 미국 시각 11-21) |
+
+두 리포트는 "돈이 나가는 날과 들어오는 날의 어긋남, 그 사이를 메운 빚"이라는 같은 구조로 목차 서론에서 비교하고, 01~03편과 이어지는 곳을 짚습니다(인과는 주장하지 않음).
 
 ## 편 목록
 
@@ -21,15 +24,16 @@
 | 02 누가 누구에게 — 상세자금순환표로 그리는 돈의 지도 | [02_fof_who_to_whom.html](02_fof_who_to_whom.html) | 가계가 은행에 맡긴 돈은 결국 누구에게 갔을까? | 예금이 펀드로 옮겨 가면 기업 몫은 커질까 |
 | 03 금융기관끼리 — 정거장 사이의 연결 | [03_fof_between_stations.html](03_fof_between_stations.html) | 금융기관끼리 촘촘하게 엮일수록 더 안전할까, 더 위험할까? | 한 곳에만 빌려주면 덜 번질까 |
 
-## 한 편에 들어 있는 것
+## 한 편에 들어 있는 것 (비전공자판)
 
-1. **히어로** — 질문, 핵심 숫자(KPI), 네 캐릭터의 첫 대화
-2. **큰 그림** — 이 편이 자금순환 통계의 어느 수준을 보는지
-3. **5칸 사다리** — 일상 비유 → 모형 → 실험(슬라이더·시뮬레이션) → 실제 통계 → 지금의 점검. 칸마다 확인 퀴즈
-4. **대결** — 초파리 연구원(의심하는 쪽)과 주판봇(확신하는 쪽)이 결과를 걸고, 같은 모형으로 판정
-5. **정리** — 칸별 비교표, 앞뒤 편과 이어지는 것, 비유의 한계
-6. **지식 색인과 꾸러미** — 검색 가능한 색인과 연결 그래프, JSON-LD·Turtle·CSV·BibTeX·RIS 내려받기
-7. **출처 표** — 숫자별 출처와 확인일
+1. **히어로** — 질문, 핵심 숫자, 박사·하루·인턴 둘·초파리·주판봇의 첫 대화와 방청석 반응
+2. **처음 오신 분께 — 이 편을 3줄로** — 무엇을 / 왜 중요한가 / 업무에서는, 영어 약어 풀이
+3. **등장인물** — 아홉 식구(X1~X3는 버튼을 눌러야 보임)
+4. **큰 그림** — 시리즈 안의 위치
+5. **다섯 단계 개념정리** — 단계마다 박사의 상황 질문 → 「왜 이 모형을 쓰나」와 「수학 수식을 어려워하는 조수가 대신 물어봅니다」(학교 수학 연결·식 조각 표·숫자로 한 번 해 보기) → 일상/모형 비교 → 하루와 인턴의 단계 대화·방청석 → 실험 → 풀이 → 박사의 정리(해석 문장) → 확인 퀴즈. 편마다 AI 판단 코너 1개
+6. **대결** — 초파리 연구원과 주판봇이 결과를 걸고, 같은 모형으로 판정
+7. **정리** — 단계별 비교표, 인턴의 정리 노트, 비유의 한계
+8. **아웃트로 · 지식 색인 · 꾸러미 · 출처 표**
 
 ## 편마다 다루는 내용
 
@@ -62,7 +66,8 @@
 
 | 파일 | 내용 |
 |---|---|
-| `index.html` | 목차 (표지 + 편 카드) |
+| `index.html` | 목차 (표지 + 서론(리포트 두 편 비교) + 리포트·편 카드) |
+| `reports/R01_*.html` · `reports/R02_*.html` | 연구실 리포트(동향) 두 편 |
 | `01_fof_money_meridian.html` · `02_fof_who_to_whom.html` · `03_fof_between_stations.html` | 해설 페이지 (캐릭터 그림·지식 색인·꾸러미 내장, 외부 라이브러리 없음) |
 | `cover_index.webp` · `og_index.jpg` | 목차 표지·공유 미리보기 (만들 예정) |
 | `cover_fof0N.webp` · `thumb_fof0N.webp` · `og_fof0N.jpg` | 편별 표지·목차 카드·공유 미리보기 |
@@ -70,29 +75,23 @@
 | `docs/COVER_*.md` | 표지 지시문 (Genspark에 붙여 넣는 프롬프트, 받은 뒤 처리) |
 | `docs/IMG_*.md` | 편별 이미지 제작 명세서 (본문 장면 컷, 매니페스트) |
 
-## 그림 넣는 법
+## 그림 넣는 법 (낮의 연구실 v2)
 
-그림 파일은 모두 저장소 루트에 같은 이름으로 올리면 됩니다. HTML은 고칠 필요가 없습니다.
+비전공자판부터 페이지는 `_v2_` 이름의 그림을 부릅니다. 그림 파일을 저장소 루트에 같은 이름으로 올리면 HTML은 고칠 필요가 없습니다. 지시문은 [docs/COVER_v2_day_lab.md](docs/COVER_v2_day_lab.md)에 있습니다.
 
 | 파일 | 어디에 보이나 | 그림이 없을 때 |
 |---|---|---|
-| `cover_index.webp` | 목차 첫 화면, 이 README | 제목만 있는 어두운 배경 |
-| `thumb_fof01~03.webp` | 목차 편 카드 | 편 번호가 적힌 색 카드 |
-| `cover_fof01~03.webp` | 각 편 맨 위 표지 | 캔버스로 그린 대체 표지(캐릭터 넷 + 편별 모티프) |
-| `og_index.jpg` · `og_fof01~03.jpg` | 링크 공유 미리보기 | 미리보기 그림 없음 |
+| `cover_v2_index.webp` | 목차 첫 화면 | 제목과 캐릭터 여섯 명의 흰 배경 표지 |
+| `thumb_v2_fof01~03.webp` | 목차 편 카드 | 편 번호가 적힌 밝은 색 카드 |
+| `cover_v2_fof01~03.webp` | 각 편 맨 위 표지 | 캔버스로 그린 대체 표지(캐릭터 여섯 + 편별 모티프, 흰 배경) |
+| `cut_v2_*`, `sc_v2_*_outro.webp` | 본문 장면·아웃트로 | 자리 숨김 |
+| `og_*.jpg` | 링크 공유 미리보기 | 지금은 예전(밤의 연구실) 그림. v2를 받으면 교체 |
 
-| 표지 | 모티프 | 지시문 |
-|---|---|---|
-| 목차 | 벽의 경맥 지도: 관 → 실 그물 → 환승역이 한 흐름으로 | [COVER_index_fof_money_meridian.md](docs/COVER_index_fof_money_meridian.md) |
-| 01편 | 굵은 관 다발, 막힌 곳과 금빛으로 부푼 곳 | [COVER_fof01_money_meridian.md](docs/COVER_fof01_money_meridian.md) |
-| 02편 | 일곱 색 구슬을 잇는 실 그물 | [COVER_fof02_who_to_whom.md](docs/COVER_fof02_who_to_whom.md) |
-| 03편 | 선로로 이어진 환승역 다섯 곳, 기울어진 역 하나 | [COVER_fof03_between_stations.md](docs/COVER_fof03_between_stations.md) |
-
-본문 장면 컷과 아웃트로 그림은 각 편에 들어가 있습니다. 히어로 무대 컷(`sc_fof0N_hero`)은 선택 항목이라 자리만 숨겨 두었습니다.
+예전 밤의 연구실 그림(`cover_fof0N`, `cut_fof0N_*`, `sc_fof0N_outro`, `thumb_fof0N`)과 지시문(`docs/COVER_fof0N_*.md`, `docs/IMG_*.md`)은 기록으로 남겨 두었습니다.
 
 ## 캐릭터
 
-박사 · 조수(하루) · 초파리 연구원 · 주판봇(외국어판 AbaBot). 캐릭터 그림과 설정의 기준은 [fruitfly-lab-expressions](https://github.com/adminmrobo/fruitfly-lab-expressions)이고, 해설 형식은 [ahnboat_lab_explainer](https://github.com/adminmrobo/ahnboat_lab_explainer) 스킬을 따릅니다.
+박사 · 조수(하루) · 초파리 연구원 · 주판봇(외국어판 AbaBot) · 인턴1 시아 · 인턴2 모아 · 방청석 X1~X3(미공개 식구). 캐릭터 그림과 설정의 기준은 [fruitfly-lab-expressions](https://github.com/adminmrobo/fruitfly-lab-expressions)이고, 해설 형식은 [ahnboat_lab_explainer](https://github.com/adminmrobo/ahnboat_lab_explainer) 스킬을 따릅니다.
 
 ## 라이선스
 
