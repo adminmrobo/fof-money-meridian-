@@ -192,7 +192,7 @@ section.level{padding:64px 0}
 .say.docq{border-left-width:6px}.say .tagq{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--c-doc);border-radius:6px;padding:0 7px;margin-right:4px;vertical-align:1px}
 .say.wrap{background:#faf7ff}
 .three{background:var(--amber-soft);border:1px solid #e9cf9f;border-left:5px solid var(--amber);border-radius:16px;padding:20px 22px;margin:8px 0}
-.three h2{font-size:22px;margin-bottom:.4em}.three ol{margin:0;padding-left:1.3em}.three li{margin:.4em 0}.three li b{color:var(--amber)}
+.three h2{font-size:22px;margin:0 0 .4em}.hero .three{margin:16px 0 8px;position:relative}.three ol{margin:0;padding-left:1.3em}.three li{margin:.4em 0}.three li b{color:var(--amber)}
 .three .note{margin:.8em 0 0;color:var(--gfp);font-weight:700}
 .three details{margin-top:10px}.abbr{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:10px 0 0}.abbr dt{font-weight:700;color:var(--amber)}.abbr dd{margin:0}
 .cast{grid-template-columns:repeat(3,1fr)}
@@ -227,6 +227,7 @@ table.tb{border-collapse:collapse;width:100%;font-size:14.5px;margin:6px 0}
 .byline a{color:var(--info)}
 footer p,footer td{overflow-wrap:anywhere}
 figure.cutslot:not(.ok){display:none}
+header.hero::before{display:none}
 </style>
 </head><body>
 <nav class="top" aria-label="섹션 바로가기">
@@ -249,7 +250,7 @@ figure.cutslot:not(.ok){display:none}
   <div class="wrap">
     <div class="eyebrow">경제학 × 회계학 · 자금순환으로 읽는 거시경제 02</div>
     <h1>누가 누구에게 — 상세자금순환표로 그리는 돈의 지도</h1>
-    <p class="q">가계가 은행에 맡긴 돈은 결국 누구에게 갔을까?</p>
+    <p class="q">가계가 은행에 맡긴 돈은 결국 누구에게 갔을까?</p><div class="three" id="first"><h2 class="th">처음 오신 분께 — 이 편을 3줄로</h2><ol><li><b>무엇을</b> 한국은행이 2026년 1월 처음 공표한 상세자금순환표로 "누가 누구에게, 어떤 상품으로 돈을 댔나"를 읽습니다. 표(행렬)를 읽고, 중간 금융기관을 한 겹 벗겨 최종 사용자를 찾습니다.</li><li><b>왜 중요한가</b> 가계가 은행에 맡긴 돈이 기업 투자로 갔는지, 다시 가계 대출로 돌아왔는지, 해외로 나갔는지에 따라 경제의 모습이 달라집니다. 위험도 이 연결을 따라 번집니다.</li><li><b>업무에서는</b> "가계 돈이 예금에서 주식으로 옮겨 갔다"는 기사를 볼 때, 그 돈이 실제로 어디에 닿았는지 확인하려면 어떤 표를 봐야 하는지 알게 됩니다.</li></ol><p class="note">행렬 계산을 할 줄 몰라도 됩니다. 슬라이더 두 개를 움직이면 페이지가 곱셈을 대신합니다. 식은 하루가 하나씩 물어봅니다.</p><details><summary>이 편에 나오는 영어 약어 풀이</summary><dl class="abbr"><dt>ECOS</dt><dd>Economic Statistics System, 한국은행 경제통계시스템</dd><dt>DSR</dt><dd>Debt Service Ratio, 총부채원리금상환비율</dd><dt>DGI</dt><dd>Data Gaps Initiative, G20 데이터 갭 이니셔티브</dd><dt>SNA</dt><dd>System of National Accounts, 국민계정체계</dd></dl></details></div>
     <p class="lede">01편에서는 부문마다 돈을 얼마나 남기고 빌렸는지(순자금운용) 보았습니다. 이번에는 그 돈이 <b>누구에게서 누구에게</b> 어떤 상품으로 건너갔는지 봅니다. 한국은행이 2026년 1월 처음 공표한 상세자금순환표가 그 지도입니다.</p>
     <section class="kpis" aria-label="숫자 요약">
       <div class="kpi a"><b>1경 6,706.9조</b><span>경제부문 간 상호연계 규모 · 2024년 말<sup><a href="#s-w2w">[1]</a></sup></span></div>
@@ -263,7 +264,6 @@ figure.cutslot:not(.ok){display:none}
   </div>
 </header>
 
-<section class="level" id="first"><div class="wrap"><div class="three"><h2>처음 오신 분께 — 이 편을 3줄로</h2><ol><li><b>무엇을</b> 한국은행이 2026년 1월 처음 공표한 상세자금순환표로 "누가 누구에게, 어떤 상품으로 돈을 댔나"를 읽습니다. 표(행렬)를 읽고, 중간 금융기관을 한 겹 벗겨 최종 사용자를 찾습니다.</li><li><b>왜 중요한가</b> 가계가 은행에 맡긴 돈이 기업 투자로 갔는지, 다시 가계 대출로 돌아왔는지, 해외로 나갔는지에 따라 경제의 모습이 달라집니다. 위험도 이 연결을 따라 번집니다.</li><li><b>업무에서는</b> "가계 돈이 예금에서 주식으로 옮겨 갔다"는 기사를 볼 때, 그 돈이 실제로 어디에 닿았는지 확인하려면 어떤 표를 봐야 하는지 알게 됩니다.</li></ol><p class="note">행렬 계산을 할 줄 몰라도 됩니다. 슬라이더 두 개를 움직이면 페이지가 곱셈을 대신합니다. 식은 하루가 하나씩 물어봅니다.</p><details><summary>이 편에 나오는 영어 약어 풀이</summary><dl class="abbr"><dt>ECOS</dt><dd>Economic Statistics System, 한국은행 경제통계시스템</dd><dt>DSR</dt><dd>Debt Service Ratio, 총부채원리금상환비율</dd><dt>DGI</dt><dd>Data Gaps Initiative, G20 데이터 갭 이니셔티브</dd><dt>SNA</dt><dd>System of National Accounts, 국민계정체계</dd></dl></details></div></div></section>
 <section class="level" id="cast">
 <div class="wrap">
   <h2>등장인물과 이 페이지 사용법</h2>
@@ -381,7 +381,7 @@ figure.cutslot:not(.ok){display:none}
 <section class="level" id="lv4">
 <div class="wrap">
   <div class="lvhead"><div class="hexno">4<small>연계</small></div><div><h2>상호연계비율 — 2024년 말 실제 지도</h2>
-  <p class="sub"><span class="lvtag g">자료: 상세자금순환표 첫 공표(2026-01-08)</span><span class="lvtag">일상: 가장 굵은 거래 관계</span></p></div></div><div class="say docq" data-who="doc"><img class="who" data-who="doc" data-mood="think" alt="" aria-hidden="true"><div><b class="name">박사</b><p><span class="tagq">상황</span> 가게의 거래처 가운데 거래가 가장 큰 곳이 문을 닫으면 가게가 흔들립니다. 나라 경제에서 "가장 굵은 거래 관계"는 어디일까요?</p></div></div><div class="duo"><div class="why"><h4>왜 이 모형(방법)을 쓰나</h4><ol><li><b>문제 상황</b> 연결이 많아도 어느 연결이 굵은지 모르면 위험을 관리할 수 없습니다.</li><li><b>앞 방법의 한계</b> ③ 단계 투시는 장난감 비율이라 실제 굵기를 알려 주지 않습니다.</li><li><b>해법</b> 두 부문이 서로에게 가진 채권액의 합을 금융자산 총액으로 나눈 상호연계비율로 실제 굵기를 잽니다.</li></ol><p class="easy"><b>쉽게 말하면</b> 거래처별 거래액이 전체 거래에서 차지하는 비중입니다.</p></div><div class="mathbox"><h4>수학 수식을 어려워하는 조수가 대신 물어봅니다</h4><div class="ask"><img class="mi" data-who="asst" data-mood="shock" alt="" aria-hidden="true"><p><b>하루</b> 상호연계비율 식에 A→B, B→A가 둘 다 나와요.</p></div><p class="school">학교 수학으로 보면: 비율(부분 ÷ 전체)</p><div class="eqbig">상호연계비율 = (A가 B에 가진 채권 + B가 A에 가진 채권) ÷ 금융자산 총액</div><div class="tw"><table class="tb"><tr><th>식 조각</th><th>읽는 법</th><th>뜻</th></tr><tr><td><b>A→B</b></td><td></td><td>A가 B에게 빌려준 돈</td></tr><tr><td><b>B→A</b></td><td></td><td>B가 A에게 빌려준 돈</td></tr><tr><td><b>금융자산 총액</b></td><td></td><td>그 표 전체의 크기</td></tr></table></div><div class="try"><b>숫자로 한 번 해 보기</b> 2024년 말 경제부문 간 연계 규모 1경 6,706.9조. 은행-가계 연계비율 13.9%이면 두 방향 채권 합은 대략 1경 6,706.9조 × 0.139 ≈ 2,322조 규모입니다(비율 정의를 거꾸로 쓴 어림 계산, 분모가 정확히 같다는 보장은 없음).</div><div class="ask" style="margin-top:10px"><img class="mi" data-who="asst" data-mood="spark" alt="" aria-hidden="true"><p><b>하루</b> 퍼센트가 작아 보여도 바탕이 1경이니까, 그 한 줄이 엄청 굵은 거네요.</p></div></div></div>
+  <p class="sub"><span class="lvtag g">자료: 상세자금순환표 첫 공표(2026-01-08)</span><span class="lvtag">일상: 가장 굵은 거래 관계</span></p></div></div><div class="say docq" data-who="doc"><img class="who" data-who="doc" data-mood="think" alt="" aria-hidden="true"><div><b class="name">박사</b><p><span class="tagq">상황</span> 가게의 거래처 가운데 거래가 가장 큰 곳이 문을 닫으면 가게가 흔들립니다. 나라 경제에서 "가장 굵은 거래 관계"는 어디일까요?</p></div></div><div class="duo"><div class="why"><h4>왜 이 모형(방법)을 쓰나</h4><ol><li><b>문제 상황</b> 연결이 많아도 어느 연결이 굵은지 모르면 위험을 관리할 수 없습니다.</li><li><b>앞 방법의 한계</b> ③ 단계 투시는 장난감 비율이라 실제 굵기를 알려 주지 않습니다.</li><li><b>해법</b> 두 부문이 서로에게 가진 채권액의 합을 금융자산 총액으로 나눈 상호연계비율로 실제 굵기를 잽니다.</li></ol><p class="easy"><b>쉽게 말하면</b> 거래처별 거래액이 전체 거래에서 차지하는 비중입니다.</p></div><div class="mathbox"><h4>수학 수식을 어려워하는 조수가 대신 물어봅니다</h4><div class="ask"><img class="mi" data-who="asst" data-mood="shock" alt="" aria-hidden="true"><p><b>하루</b> 상호연계비율 식에 A→B, B→A가 둘 다 나와요.</p></div><p class="school">학교 수학으로 보면: 비율(부분 ÷ 전체)</p><div class="eqbig">상호연계비율 = (A가 B에 가진 채권 + B가 A에 가진 채권) ÷ 금융자산 총액</div><div class="tw"><table class="tb"><tr><th>식 조각</th><th>읽는 법</th><th>뜻</th></tr><tr><td><b>A→B</b></td><td></td><td>A가 B에게 빌려준 돈</td></tr><tr><td><b>B→A</b></td><td></td><td>B가 A에게 빌려준 돈</td></tr><tr><td><b>금융자산 총액</b></td><td></td><td>그 표 전체의 크기</td></tr></table></div><div class="try"><b>숫자로 한 번 해 보기</b> 장난감 예시: 금융자산 총액이 100인 경제에서 은행이 가계에 대출로 7, 가계가 은행에 예금으로 6.9를 가졌다면 (7 + 6.9) ÷ 100 = 13.9%입니다. 실제 2024년 말 은행-가계가 13.9%였습니다(실제 금액은 이 페이지가 확인하지 못함).</div><div class="ask" style="margin-top:10px"><img class="mi" data-who="asst" data-mood="spark" alt="" aria-hidden="true"><p><b>하루</b> 두 방향을 더한다는 게 핵심이네요. 대출과 예금이 함께 들어가요.</p></div></div></div>
   <div class="pair">
     <div><div class="tag fly">일상으로 치면</div><p>가게 거래 기록에서 거래 금액이 가장 큰 거래처 몇 곳이 무너지면 가게 전체가 흔들립니다. 어느 관계가 굵은지 아는 것이 위험 관리의 시작입니다.</p></div>
     <div><div class="tag nn">모형에서는</div><p>상호연계비율 = 두 부문이 서로에게 가진 채권액의 합 ÷ 금융자산 총액. 상세자금순환표의 행렬에서 두 자리(A→B, B→A)을 더한 값의 비중입니다 <a href="#s-w2w">[1]</a>.</p></div>

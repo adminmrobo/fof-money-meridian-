@@ -192,7 +192,7 @@ section.level{padding:64px 0}
 .say.docq{border-left-width:6px}.say .tagq{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--c-doc);border-radius:6px;padding:0 7px;margin-right:4px;vertical-align:1px}
 .say.wrap{background:#faf7ff}
 .three{background:var(--amber-soft);border:1px solid #e9cf9f;border-left:5px solid var(--amber);border-radius:16px;padding:20px 22px;margin:8px 0}
-.three h2{font-size:22px;margin-bottom:.4em}.three ol{margin:0;padding-left:1.3em}.three li{margin:.4em 0}.three li b{color:var(--amber)}
+.three h2{font-size:22px;margin:0 0 .4em}.hero .three{margin:16px 0 8px;position:relative}.three ol{margin:0;padding-left:1.3em}.three li{margin:.4em 0}.three li b{color:var(--amber)}
 .three .note{margin:.8em 0 0;color:var(--gfp);font-weight:700}
 .three details{margin-top:10px}.abbr{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:10px 0 0}.abbr dt{font-weight:700;color:var(--amber)}.abbr dd{margin:0}
 .cast{grid-template-columns:repeat(3,1fr)}
@@ -227,6 +227,7 @@ table.tb{border-collapse:collapse;width:100%;font-size:14.5px;margin:6px 0}
 .byline a{color:var(--info)}
 footer p,footer td{overflow-wrap:anywhere}
 figure.cutslot:not(.ok){display:none}
+header.hero::before{display:none}
 </style>
 </head><body>
 <nav class="top" aria-label="섹션 바로가기">
@@ -249,7 +250,7 @@ figure.cutslot:not(.ok){display:none}
   <div class="wrap">
     <div class="eyebrow">경제학 × 회계학 · 자금순환으로 읽는 거시경제 03</div>
     <h1>금융기관끼리 — 정거장 사이의 연결</h1>
-    <p class="q">금융기관끼리 촘촘하게 엮일수록 금융은 더 안전해질까, 더 위험해질까?</p>
+    <p class="q">금융기관끼리 촘촘하게 엮일수록 금융은 더 안전해질까, 더 위험해질까?</p><div class="three" id="first"><h2 class="th">처음 오신 분께 — 이 편을 3줄로</h2><ol><li><b>무엇을</b> 은행·보험·펀드·증권사 같은 금융기관끼리 주고받는 돈(금융기관 간 연계)을 봅니다. 장난감 금융망으로 한 곳이 무너질 때 손실이 어떻게 번지는지 직접 실험합니다.</li><li><b>왜 중요한가</b> 금융기관끼리의 연결은 작은 충격은 나눠 받는 그물이 되지만, 큰 충격에서는 손실이 퍼지는 길이 됩니다. 2026년에는 빚을 낀 투자(레버리지)가 크게 늘었습니다.</li><li><b>업무에서는</b> "금융 취약성 최고" 같은 기사를 볼 때, 연결의 크기와 완충(자본)의 두께를 함께 물어야 한다는 기준을 갖게 됩니다.</li></ol><p class="note">수식을 몰라도 됩니다. 충격 크기 슬라이더를 움직여 무너지는 곳의 수가 언제 갑자기 뛰는지만 보면 됩니다.</p><details><summary>이 편에 나오는 영어 약어 풀이</summary><dl class="abbr"><dt>FVI</dt><dd>Financial Vulnerability Index, 금융취약성지수</dd><dt>FSI</dt><dd>Financial Stress Index, 금융불안지수</dd><dt>ETF</dt><dd>Exchange Traded Fund, 상장지수펀드</dd><dt>MMF</dt><dd>Money Market Fund, 단기금융펀드</dd></dl></details></div>
     <p class="lede">02편에서 은행·보험·펀드는 가계 돈이 기업과 정부로 가는 <b>정거장</b>이었습니다. 이번에는 정거장끼리 주고받는 돈을 봅니다. 한국은행 상세자금순환표에서 금융기관 간 연계는 2024년 말 3,477.5조 원이었습니다.</p>
     <section class="kpis" aria-label="숫자 요약">
       <div class="kpi a"><b>3,477.5조</b><span>금융기관 간 상호연계 규모 · 2024년 말<sup><a href="#s-w2w">[1]</a></sup></span></div>
@@ -263,7 +264,6 @@ figure.cutslot:not(.ok){display:none}
   </div>
 </header>
 
-<section class="level" id="first"><div class="wrap"><div class="three"><h2>처음 오신 분께 — 이 편을 3줄로</h2><ol><li><b>무엇을</b> 은행·보험·펀드·증권사 같은 금융기관끼리 주고받는 돈(금융기관 간 연계)을 봅니다. 장난감 금융망으로 한 곳이 무너질 때 손실이 어떻게 번지는지 직접 실험합니다.</li><li><b>왜 중요한가</b> 금융기관끼리의 연결은 작은 충격은 나눠 받는 그물이 되지만, 큰 충격에서는 손실이 퍼지는 길이 됩니다. 2026년에는 빚을 낀 투자(레버리지)가 크게 늘었습니다.</li><li><b>업무에서는</b> "금융 취약성 최고" 같은 기사를 볼 때, 연결의 크기와 완충(자본)의 두께를 함께 물어야 한다는 기준을 갖게 됩니다.</li></ol><p class="note">수식을 몰라도 됩니다. 충격 크기 슬라이더를 움직여 무너지는 곳의 수가 언제 갑자기 뛰는지만 보면 됩니다.</p><details><summary>이 편에 나오는 영어 약어 풀이</summary><dl class="abbr"><dt>FVI</dt><dd>Financial Vulnerability Index, 금융취약성지수</dd><dt>FSI</dt><dd>Financial Stress Index, 금융불안지수</dd><dt>ETF</dt><dd>Exchange Traded Fund, 상장지수펀드</dd><dt>MMF</dt><dd>Money Market Fund, 단기금융펀드</dd></dl></details></div></div></section>
 <section class="level" id="cast">
 <div class="wrap">
   <h2>등장인물과 이 페이지 사용법</h2>

@@ -192,7 +192,7 @@ section.level{padding:64px 0}
 .say.docq{border-left-width:6px}.say .tagq{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--c-doc);border-radius:6px;padding:0 7px;margin-right:4px;vertical-align:1px}
 .say.wrap{background:#faf7ff}
 .three{background:var(--amber-soft);border:1px solid #e9cf9f;border-left:5px solid var(--amber);border-radius:16px;padding:20px 22px;margin:8px 0}
-.three h2{font-size:22px;margin-bottom:.4em}.three ol{margin:0;padding-left:1.3em}.three li{margin:.4em 0}.three li b{color:var(--amber)}
+.three h2{font-size:22px;margin:0 0 .4em}.hero .three{margin:16px 0 8px;position:relative}.three ol{margin:0;padding-left:1.3em}.three li{margin:.4em 0}.three li b{color:var(--amber)}
 .three .note{margin:.8em 0 0;color:var(--gfp);font-weight:700}
 .three details{margin-top:10px}.abbr{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:10px 0 0}.abbr dt{font-weight:700;color:var(--amber)}.abbr dd{margin:0}
 .cast{grid-template-columns:repeat(3,1fr)}
@@ -227,6 +227,7 @@ table.tb{border-collapse:collapse;width:100%;font-size:14.5px;margin:6px 0}
 .byline a{color:var(--info)}
 footer p,footer td{overflow-wrap:anywhere}
 figure.cutslot:not(.ok){display:none}
+header.hero::before{display:none}
 </style>
 </head><body>
 <nav class="top" aria-label="섹션 바로가기">
@@ -249,7 +250,7 @@ figure.cutslot:not(.ok){display:none}
   <div class="wrap">
     <div class="eyebrow">경제학 × 회계학 · 자금순환으로 읽는 거시경제 01</div>
     <h1>돈의 경맥 — 경제순환에서 자금순환표까지</h1>
-    <p class="q">GDP는 자라는데 거리는 왜 마를까? 돈은 어디서 돌고, 어디에 고여 있을까?</p>
+    <p class="q">GDP는 자라는데 거리는 왜 마를까? 돈은 어디서 돌고, 어디에 고여 있을까?</p><div class="three" id="first"><h2 class="th">처음 오신 분께 — 이 편을 3줄로</h2><ol><li><b>무엇을</b> 경제가 도는 모습(경제순환) → 금리와 산출(IS-LM) → 물가(AD-AS)를 차례로 본 뒤, 회계의 재무제표 세 가지에 빗대 한국은행 자금순환표를 읽습니다.</li><li><b>왜 중요한가</b> 나라 전체 숫자(GDP)가 자라도 돈이 반도체·주식·특정 지역에 고이면 동네 가게는 마릅니다. "얼마나"만 보는 모형으로는 "누구에게"가 보이지 않습니다.</li><li><b>업무에서는</b> "성장률은 좋은데 왜 매출이 안 늘지?"라는 질문에, 어떤 통계를 펴서 어디를 봐야 하는지 순서를 갖게 됩니다.</li></ol><p class="note">수식을 몰라도 됩니다. 슬라이더를 움직이고 숫자를 보며 따라오면 됩니다. 식이 나오면 조수 하루가 기호 하나씩 대신 물어봅니다.</p><details><summary>이 편에 나오는 영어 약어 풀이</summary><dl class="abbr"><dt>GDP</dt><dd>Gross Domestic Product, 국내총생산</dd><dt>IS-LM</dt><dd>Investment-Saving · Liquidity-Money, 재화시장과 화폐시장의 균형 모형</dd><dt>AD-AS</dt><dd>Aggregate Demand · Aggregate Supply, 총수요와 총공급</dd><dt>K-IFRS</dt><dd>한국채택국제회계기준</dd><dt>KOSPI</dt><dd>한국 유가증권시장 종합주가지수</dd></dl></details></div>
     <p class="lede">경제순환모형 → IS-LM → AD-AS로 경제 전체의 <b>손익</b>을 먼저 보고, 회계의 세 표처럼 <b>현금흐름표에 해당하는 자금순환표</b>로 같은 경제를 다시 읽습니다. 그다음 2025~2026년 실제 통계로 반도체·방산 이익 집중, 지역 부동산, 부의 불균등, 산업 쏠림을 섹터별 근거와 함께 짚습니다.</p>
     <section class="kpis" aria-label="숫자 요약">
       <div class="kpi g"><b>+1.0%</b><span>실질 GDP 전기 대비(전년 동기 대비 +3.4%) · 2026년 3분기 속보치<sup><a href="#s-gdp">[1]</a></sup></span></div>
@@ -264,7 +265,6 @@ figure.cutslot:not(.ok){display:none}
   </div>
 </header>
 
-<section class="level" id="first"><div class="wrap"><div class="three"><h2>처음 오신 분께 — 이 편을 3줄로</h2><ol><li><b>무엇을</b> 경제가 도는 모습(경제순환) → 금리와 산출(IS-LM) → 물가(AD-AS)를 차례로 본 뒤, 회계의 재무제표 세 가지에 빗대 한국은행 자금순환표를 읽습니다.</li><li><b>왜 중요한가</b> 나라 전체 숫자(GDP)가 자라도 돈이 반도체·주식·특정 지역에 고이면 동네 가게는 마릅니다. "얼마나"만 보는 모형으로는 "누구에게"가 보이지 않습니다.</li><li><b>업무에서는</b> "성장률은 좋은데 왜 매출이 안 늘지?"라는 질문에, 어떤 통계를 펴서 어디를 봐야 하는지 순서를 갖게 됩니다.</li></ol><p class="note">수식을 몰라도 됩니다. 슬라이더를 움직이고 숫자를 보며 따라오면 됩니다. 식이 나오면 조수 하루가 기호 하나씩 대신 물어봅니다.</p><details><summary>이 편에 나오는 영어 약어 풀이</summary><dl class="abbr"><dt>GDP</dt><dd>Gross Domestic Product, 국내총생산</dd><dt>IS-LM</dt><dd>Investment-Saving · Liquidity-Money, 재화시장과 화폐시장의 균형 모형</dd><dt>AD-AS</dt><dd>Aggregate Demand · Aggregate Supply, 총수요와 총공급</dd><dt>K-IFRS</dt><dd>한국채택국제회계기준</dd><dt>KOSPI</dt><dd>한국 유가증권시장 종합주가지수</dd></dl></details></div></div></section>
 <section class="level" id="cast">
 <div class="wrap">
   <h2>등장인물과 이 페이지 사용법</h2>
