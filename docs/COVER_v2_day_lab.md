@@ -42,6 +42,10 @@ Keep every face and hand inside the central safe area; no text, no letters, no n
 Avoid for the robot: white glossy round head, black pill-shaped screen, yellow eyes, ball antenna, floating, gold coins.
 ```
 
+## 요청 꾸러미
+
+대화별 요청문은 [genspark_v2/](genspark_v2/)에 있습니다(캐릭터 참고 그림은 fruitfly-lab-expressions의 E13 그림).
+
 ## 순서
 1. `cover_v2_index` 한 장을 먼저 받아 그림체를 확인합니다(참고 그림: fruitfly-lab-expressions의 doctor·haru·fruitfly·jupanbot·sia·moa E13).
 2. 나머지는 새 대화에서 `cover_v2_index`를 함께 올려 3~4장씩 받습니다(같은 비율끼리).

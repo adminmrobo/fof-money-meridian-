@@ -35,6 +35,8 @@
 7. **정리** — 단계별 비교표, 인턴의 정리 노트, 비유의 한계
 8. **아웃트로 · 지식 색인 · 꾸러미 · 출처 표**
 
+단계마다 확인 퀴즈에 수식 상자와 같은 숫자의 [손계산] 문항을 하나씩 더했습니다. 수업에 쓰신다면 [teacher.html](teacher.html)을 보세요.
+
 ## 편마다 다루는 내용
 
 **01 돈의 경맥**
@@ -68,6 +70,8 @@
 |---|---|
 | `index.html` | 목차 (표지 + 서론(리포트 두 편 비교) + 리포트·편 카드) |
 | `reports/R01_*.html` · `reports/R02_*.html` | 연구실 리포트(동향) 두 편 |
+| `teacher.html` | 강의자용 안내서 (4차시 구성, 발문, 손계산 정답표, 흔한 오개념, 평가 문항) |
+| `docs/genspark_v2/` | 낮의 연구실 v2 그림 요청문(대화 4개, 11장)과 저장 이름 체크리스트 |
 | `01_fof_money_meridian.html` · `02_fof_who_to_whom.html` · `03_fof_between_stations.html` | 해설 페이지 (캐릭터 그림·지식 색인·꾸러미 내장, 외부 라이브러리 없음) |
 | `cover_index.webp` · `og_index.jpg` | 목차 표지·공유 미리보기 (만들 예정) |
 | `cover_fof0N.webp` · `thumb_fof0N.webp` · `og_fof0N.jpg` | 편별 표지·목차 카드·공유 미리보기 |

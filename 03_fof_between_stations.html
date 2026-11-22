@@ -919,6 +919,12 @@ function buildPackage(scope){var KG=JSON.parse($('#kg-raw').textContent),REF=JSO
 
 /* ===== 미공개 식구 보기 ===== */
 (function(){var b=document.querySelector('[data-toggle-hidden]');if(!b)return;b.addEventListener('click',function(){var t=document.querySelector(b.getAttribute('data-toggle-hidden'));var on=!t.classList.contains('on');t.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.textContent=on?'미공개 식구 접기':'미공개 식구 보기 (No.007~009)';if(on&&window.Cast)Cast.fill();});})();
+/* ===== 손계산 확인 퀴즈(수식 상자와 같은 숫자) ===== */
+if(QUIZ.lv1)QUIZ.lv1.push({"q": "[손계산] (3,477.5 − 3,191.9) ÷ 3,191.9 × 100은 약?", "o": ["8.9%", "5.9%", "285.6%"], "a": 0, "why": "285.6 ÷ 3,191.9 × 100 ≈ 8.9%.", "hint": "늘어난 금액부터 구하세요."});
+if(QUIZ.lv2)QUIZ.lv2.push({"q": "[손계산] k = 0.5이면 금융기관끼리 쌓인 연결은?", "o": ["50", "200", "100"], "a": 2, "why": "100 × 0.5 ÷ (1 − 0.5) = 100. 평균 2곳을 거칩니다.", "hint": "100 × k ÷ (1 − k)."});
+if(QUIZ.lv3)QUIZ.lv3.push({"q": "[손계산] 충격 3, 자본 0.8, 다섯 곳이 넘친 손실을 똑같이 나누면 한 곳당?", "o": ["0.44", "0.6", "2.2"], "a": 0, "why": "(3 − 0.8) ÷ 5 = 0.44. 자본 0.8보다 작아 멈춥니다.", "hint": "먼저 자본을 빼세요."});
+if(QUIZ.lv4)QUIZ.lv4.push({"q": "[손계산] 12.2% → 12.0%의 변화는?", "o": ["−2%포인트", "−0.2%포인트", "+0.2%포인트"], "a": 1, "why": "12.0 − 12.2 = −0.2%포인트입니다.", "hint": "비율끼리의 뺄셈은 %포인트."});
+if(QUIZ.lv5)QUIZ.lv5.push({"q": "[손계산] 내 돈 100에 빌린 돈 100을 더해 200을 투자했는데 가격이 10% 내리면, 내 돈 기준 손실률은?", "o": ["10%", "20%", "5%"], "a": 1, "why": "손실 20 ÷ 내 돈 100 = 20%. 레버리지 2배가 충격을 두 배로 만듭니다.", "hint": "손실 금액부터 구하세요."});
 /* ===== 시작 ===== */
 Cast.fill();
 var STUDY=Study({quiz:QUIZ});
