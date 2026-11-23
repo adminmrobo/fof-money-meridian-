@@ -20,7 +20,7 @@ section{padding:36px 0;border-top:1px solid var(--rule)}
 ol,ul{padding-left:1.3em}li{margin:.3em 0}
 footer{padding:28px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--rule)}footer p{overflow-wrap:anywhere}
 @media print{nav{display:none}section{break-inside:avoid-page}}
-</style></head><body>
+</style><!-- px-fix v1 --><style id="px-fix">img{image-rendering:auto!important}</style><script id="px-fix-js">(function(){var R=window.ResizeObserver;function f(i){var n=i.naturalWidth,w=i.getBoundingClientRect().width;if(!n||!w)return;var s=w*(window.devicePixelRatio||1)/n;i.style.setProperty("image-rendering",s>=1.95?"pixelated":"auto","important")}var ro=R?new R(function(es){es.forEach(function(e){f(e.target)})}):null;function a(i){if(i.__px)return;i.__px=1;i.addEventListener("load",function(){f(i)});if(ro)ro.observe(i);f(i)}function all(r){(r||document).querySelectorAll&&(r||document).querySelectorAll("img").forEach(a)}function go(){all();if(window.MutationObserver)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;if(n.tagName==="IMG")a(n);else all(n)})})}).observe(document.documentElement,{childList:true,subtree:true});window.addEventListener("resize",function(){document.querySelectorAll("img").forEach(f)})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",go);else go()})();</script><!-- /px-fix --></head><body>
 <nav><b>강의자용 안내서</b><a href="#plan">차시 구성</a><a href="#flow">한 차시 흐름</a><a href="#ask">발문</a><a href="#answers">손계산 정답표</a><a href="#mis">흔한 오개념</a><a href="#eval">평가 문항</a><a href="index.html">목차로</a></nav>
 <div class="wrap">
 <header>
