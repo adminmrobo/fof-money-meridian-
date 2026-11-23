@@ -1,0 +1,237 @@
+{
+ "version": "1.0",
+ "made": "2026-11-24",
+ "via": "rehang-2026-11-24",
+ "domains": [
+  "econ",
+  "fin",
+  "acct"
+ ],
+ "note": "분야 뼈대 주제에 다시 걸기(ai-lab-retrofit 15장). links는 자동 후보이며 틀린 줄은 지우면 된다. 빌드 스크립트가 있는 저장소는 빌드 끝에 rehang.apply_overlay()가 이 파일을 적용한다.",
+ "topics": {
+  "lab:topic/ad-as": {
+   "ko": "총수요·총공급",
+   "en": "Aggregate demand and supply",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/business-cycle": {
+   "ko": "경기 순환",
+   "en": "Business cycle",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/capital-structure": {
+   "ko": "자본 구조",
+   "en": "Capital structure",
+   "domain": [
+    "biz"
+   ],
+   "level": 2
+  },
+  "lab:topic/credit-scoring": {
+   "ko": "신용평가 모형",
+   "en": "Credit scoring",
+   "domain": [
+    "fin"
+   ],
+   "level": 2
+  },
+  "lab:topic/current-account": {
+   "ko": "경상수지",
+   "en": "Current account",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/gdp": {
+   "ko": "국내총생산",
+   "en": "Gross domestic product",
+   "domain": [
+    "econ"
+   ],
+   "level": 1
+  },
+  "lab:topic/government-spending": {
+   "ko": "정부 지출",
+   "en": "Government spending",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/is-lm": {
+   "ko": "IS-LM 모형",
+   "en": "IS-LM model",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/matrices-linear-maps": {
+   "ko": "행렬과 선형사상",
+   "en": "Matrices and linear maps",
+   "domain": [
+    "math"
+   ],
+   "level": 1
+  },
+  "lab:topic/network-economics": {
+   "ko": "네트워크 경제학",
+   "en": "Network economics",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/nominal-real": {
+   "ko": "명목과 실질",
+   "en": "Nominal and real",
+   "domain": [
+    "econ"
+   ],
+   "level": 1
+  },
+  "lab:topic/policy-rate": {
+   "ko": "기준금리",
+   "en": "Policy rate",
+   "domain": [
+    "econ"
+   ],
+   "level": 3
+  },
+  "lab:topic/risk-measurement": {
+   "ko": "위험 측정",
+   "en": "Risk measurement",
+   "domain": [
+    "biz"
+   ],
+   "level": 3
+  },
+  "lab:topic/risk-return": {
+   "ko": "위험과 수익",
+   "en": "Risk and return",
+   "domain": [
+    "fin"
+   ],
+   "level": 3
+  },
+  "lab:topic/valuation": {
+   "ko": "기업가치 평가",
+   "en": "Valuation",
+   "domain": [
+    "fin"
+   ],
+   "level": 3
+  }
+ },
+ "links": {
+  "lab:concept/capital-buffer": {
+   "topic": "lab:topic/risk-measurement",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "완충(자본)"
+  },
+  "lab:concept/contagion-path": {
+   "topic": "lab:topic/network-economics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "전염 경로"
+  },
+  "lab:concept/credit-spread": {
+   "topic": "lab:topic/risk-return",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "가산금리(스프레드)"
+  },
+  "lab:concept/crowding-out": {
+   "topic": "lab:topic/government-spending",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "구축 효과"
+  },
+  "lab:concept/financial-accelerator": {
+   "topic": "lab:topic/business-cycle",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "금융가속기"
+  },
+  "lab:concept/investment-grade": {
+   "topic": "lab:topic/credit-scoring",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "투자등급"
+  },
+  "lab:concept/leontief-inverse-fin": {
+   "topic": "lab:topic/matrices-linear-maps",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "금융기관 간 역행렬 (I − F)⁻¹"
+  },
+  "lab:concept/leverage": {
+   "topic": "lab:topic/capital-structure",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "레버리지"
+  },
+  "lab:concept/nominal-vs-real": {
+   "topic": "lab:topic/nominal-real",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "명목과 실질"
+  },
+  "lab:concept/policy-rate-hike": {
+   "topic": "lab:topic/policy-rate",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "기준금리 인상"
+  },
+  "lab:indicator/current-account": {
+   "topic": "lab:topic/current-account",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "경상수지"
+  },
+  "lab:theory/ad-as": {
+   "topic": "lab:topic/ad-as",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "AD-AS 모형"
+  },
+  "lab:theory/circular-flow": {
+   "topic": "lab:topic/gdp",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "경제순환모형"
+  },
+  "lab:theory/clearing-vector": {
+   "topic": "lab:topic/network-economics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "청산 벡터 모형"
+  },
+  "lab:theory/is-lm": {
+   "topic": "lab:topic/is-lm",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "IS-LM 모형"
+  },
+  "lab:theory/network-phase-transition": {
+   "topic": "lab:topic/network-economics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "금융망 상전이"
+  },
+  "lab:theory/tobin-q": {
+   "topic": "lab:topic/valuation",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "토빈의 q"
+  }
+ }
+}
